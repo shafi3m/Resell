@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input[type="text"],
+        input[type="password"],
+        input[type="email"],
+        input[type="tel"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+
+        input[type="submit"] {
+            background-color: #007BFF;
+            color: #fff;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Sign Up</h2>
+        <form action="signupProcess.jsp" method="POST">
+         
+
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="createPassword">Create Password</label>
+            <input type="password" id="createPassword" name="createPassword" required>
+
+            <label for="confirmPassword">Confirm Password</label>
+            <input type="password" id="confirmPassword" name="confirmPassword" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="mobile">Mobile</label>
+            <input type="tel" id="mobile" name="mobile" required>
+            
+            
+
+            <input type="submit" value="Sign Up">
+        </form>
+
+        <p class="text-center">
+            Already have an account? <a href="login.html">Log in</a>
+        </p>
+    </div>
+</body>
+</html>
